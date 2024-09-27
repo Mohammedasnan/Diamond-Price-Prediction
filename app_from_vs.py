@@ -20,7 +20,7 @@ x = st.number_input("Enter the length of diamond")
 y = st.number_input("Enter the width of the diamond")
 z = st.number_input("Enter the z of the diamond")
 
-model_1 = pickle.load(open(r"estimator_vs.pkl","rb")) #pickle file path
+model_1 = pickle.load(open("estimator_vs.pkl","rb")) #pickle file path
 
 if st.button("Submit"):
     result = model_1.predict([[carat,cut,color,clarity,depth,table,x,y,z]])
